@@ -33,8 +33,7 @@
     transform: rotate(360deg);
   }
 }
-
 .fotos {
-  /* width: 50%; */
-  max-height: 100%;
+  width: 50%;
+  float: left;
 }
