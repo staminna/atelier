@@ -8,6 +8,11 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: Neutratext;
+  src: url('fonts/NeutraText-BookAlt.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+  letter-spacing: 0.0625em;
+}
+
+.Textwelcome {
+  letter-spacing: 2px;
 }

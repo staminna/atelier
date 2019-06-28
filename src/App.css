@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -9,18 +10,19 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: 000;
 }
 
 .App-link {
-  color: #61dafb;
+  font-family: Arial, Helvetica, sans-serif;
+  src: url("fonts/HelveticaNeueLTStd-Lt.otf") format("opentype");
 }
 
 @keyframes App-logo-spin {
@@ -30,4 +32,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.fotos {
+  /* width: 50%; */
+  max-height: 100%;
 }
