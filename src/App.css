@@ -1,39 +1,38 @@
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #fff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: 000;
-}
-
-.App-link {
-  font-family: Arial, Helvetica, sans-serif;
-  src: url("fonts/HelveticaNeueLTStd-Lt.otf") format("opentype");
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .fotos {
-  width: 50%;
+  /* width: 50%; */
+  height: 835px;
   float: left;
+}
+
+.left {
+    float: left;
+    width: 50%;
+    /* background-color: black; */
+}
+.right {
+    float: right;
+    width: 50%;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.group:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 480px) {
+    .left, .right {
+        float: none;
+        width: auto;
+    }
+}
+
+@font-face {
+    font-family: HelveticaModos;
+    src: url("./fonts/HelveticaNeueLTStd-Lt.otf") format("opentype");
+    text-align: center;
+    font-size: 180px;
 }

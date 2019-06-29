@@ -1,16 +1,17 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
   font-family: Neutratext;
   src: url('fonts/NeutraText-BookAlt.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
   letter-spacing: 0.0625em;
+}
+
+.logoFont {
+  font-family: HelveticaModos;
+  font-size: 180px;
+  text-align: center;
 }
 
 .Textwelcome {
