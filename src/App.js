@@ -1,7 +1,12 @@
 import React, {Component} from 'react';
-// import logo from './logo.svg';
-import './App.css';
 import Slider from "react-slick";
+import {
+  Route,
+  NavLink,
+  HashRouter
+} from "react-router-dom";
+import Contact from "./Contact"
+import './App.css';
 
 export default class Responsive extends Component {
   render() {
@@ -64,6 +69,19 @@ export default class Responsive extends Component {
               <img alt="Figueira" className="fotos" src="fotos/7_figueira_editado.jpg"/>
             </div>
           </Slider>
+          <HashRouter>
+        <div>
+          <h1>Simple SPA</h1>
+          <ul className="header">
+
+            <li><NavLink to="/contact">Contact</NavLink></li>
+          </ul>
+          <div className="content">
+
+            <Route path="/contact" component={Contact}/>
+          </div>
+        </div>
+      </HashRouter>
         </div>
         <div className="right">
           <p className="logoFont"> ( ).</p>
@@ -72,24 +90,3 @@ export default class Responsive extends Component {
     );
   }
 }
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p className="Textwelcome">
-//           Bemvindo a <code>Modo(s)</code>
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           ().
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
