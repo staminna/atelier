@@ -1,8 +1,17 @@
 
 .fotos {
-  /* width: 50%; */
-  height:100vh;
-  float: left;
+  
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    height:100vh;
+    float: left;
+ 
+
+}
+
+.logotipo {
+    width: 50%;
 }
 
 .left {
@@ -13,10 +22,15 @@
 .right {
     float: right;
     width: 50%;
+    height: 100%;
+    
+    display: inline-block;
+    vertical-align: middle;
+    
+    white-space: nowrap; /* this is required unless you put the helper span closely near the img */
+    text-align: center; margin: 1em 0;
 }
 img {
-    max-width: 100%;
-    height: auto;
 }
 .group:after {
     content:"";
@@ -28,6 +42,12 @@ img {
         float: none;
         width: auto;
     }
+}
+
+.header {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
 }
 
 @font-face {

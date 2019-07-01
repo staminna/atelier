@@ -71,14 +71,16 @@ export default class Responsive extends Component {
           </Slider>
         </div>
         <div className="right">
-          <p className="logoFont"> ( ).</p>
+          
           <HashRouter>
         <div>
-          <h1>Simple SPA</h1>
-          <ul className="header">
+       
+          <div className="header">
 
-            <li><NavLink to="/contact">Contact</NavLink></li>
-          </ul>
+            <NavLink to="/contact"> <img className="logotipo" src="parenteses.png" alt="1"/> 
+            
+            </NavLink>
+          </div>
           <div className="content">
 
             <Route path="/contact" component={Contact}/>
