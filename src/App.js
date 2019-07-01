@@ -69,6 +69,9 @@ export default class Responsive extends Component {
               <img alt="Figueira" className="fotos" src="fotos/7_figueira_editado.jpg"/>
             </div>
           </Slider>
+        </div>
+        <div className="right">
+          <p className="logoFont"> ( ).</p>
           <HashRouter>
         <div>
           <h1>Simple SPA</h1>
@@ -82,9 +85,6 @@ export default class Responsive extends Component {
           </div>
         </div>
       </HashRouter>
-        </div>
-        <div className="right">
-          <p className="logoFont"> ( ).</p>
         </div>
       </div>
     );
