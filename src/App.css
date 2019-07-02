@@ -11,7 +11,8 @@
 }
 
 .logotipo {
-    width: 50%;
+    max-width: 20%;
+    display:inline;
 }
 
 .left {
@@ -23,15 +24,12 @@
     float: right;
     width: 50%;
     height: 100%;
+    display: table-cell;
     
-    display: inline-block;
     vertical-align: middle;
-    
-    white-space: nowrap; /* this is required unless you put the helper span closely near the img */
-    text-align: center; margin: 1em 0;
+    text-align: center;
 }
-img {
-}
+
 .group:after {
     content:"";
     display: table;
@@ -55,4 +53,10 @@ img {
     src: url("./fonts/HelveticaNeueLTStd-Lt.otf") format("opentype");
     text-align: center;
     font-size: 180px;
+}
+
+.vertical-align {
+    padding-top: 25%;
+    display: inline-block;
+    height:100vh;
 }

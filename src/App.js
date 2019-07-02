@@ -5,10 +5,22 @@ import {
   NavLink,
   HashRouter
 } from "react-router-dom";
-import Contact from "./Contact"
+
 import './App.css';
 
 export default class Responsive extends Component {
+  constructor() {
+    super()
+    this.state={
+     showMe:true
+    }
+  }
+  operation()
+  {
+    this.setState({
+      showMe:!this.state.showMe
+    })
+  }
   render() {
     var settings = {
       dots: false,
@@ -71,20 +83,24 @@ export default class Responsive extends Component {
           </Slider>
         </div>
         <div className="right">
-          
           <HashRouter>
-        <div>
-       
-          <div className="header">
+        <div className="vertical-align">
 
-            <NavLink to="/contact"> <img className="logotipo" src="parenteses.png" alt="1"/> 
-            
-            </NavLink>
-          </div>
-          <div className="content">
+             <img className="logotipo" src="parenteses.png" onBlur={()=>this.operation()} alt="1"/> 
 
-            <Route path="/contact" component={Contact}/>
-          </div>
+             {
+              this.state.showMe?
+              <div className="morada">
+              <h2 className="logoFont"> MODO(s). </h2>
+              <p className="addressFont"> geral@modosatelier.pt </p>
+              <ul>
+                <li className="addressFont"> 917 662 686 | 914 258 208</li>
+                <li className="addressFont"> Rua Arístides de Sousa Mendes </li>
+                <li className="addressFont"> no27 fração A, 3100-510 Pombal</li>
+              </ul>
+              </div>
+              :null
+             }
         </div>
       </HashRouter>
         </div>
@@ -92,3 +108,4 @@ export default class Responsive extends Component {
     );
   }
 }
+

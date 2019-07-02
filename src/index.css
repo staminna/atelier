@@ -2,18 +2,20 @@ body {
   margin: 0;
 }
 
-code {
+.addressFace {
   font-family: Neutratext;
   src: url('fonts/NeutraText-BookAlt.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
   letter-spacing: 0.0625em;
 }
 
-.logoFont {
-  font-family: HelveticaModos;
-  font-size: 180px;
-  text-align: center;
+.addressFont {
+  font-family: Neutratext;
+  letter-spacing: 2px;
 }
 
-.Textwelcome {
-  letter-spacing: 2px;
+li {
+  list-style-type: none;
+}
+.logotipo {
+  display: none;
 }
