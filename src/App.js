@@ -12,7 +12,7 @@ export default class Responsive extends Component {
   constructor() {
     super()
     this.state={
-     showMe:true
+     showMe:false
     }
   }
   operation()
@@ -86,7 +86,7 @@ export default class Responsive extends Component {
           <HashRouter>
         <div className="vertical-align">
 
-             <img className="logotipo" src="parenteses.png" onBlur={()=>this.operation()} alt="1"/> 
+             <img className="logotipo" src="parenteses.png" onClick={()=>this.operation()} alt="1"/> 
 
              {
               this.state.showMe?
