@@ -1,20 +1,3 @@
-
-.fotos {
-  
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    height:100vh;
-    float: left;
- 
-
-}
-
-.logotipo {
-    max-width: 20%;
-    display:inline;
-}
-
 .left {
     float: left;
     width: 50%;
@@ -25,9 +8,22 @@
     width: 50%;
     height: 100%;
     display: table-cell;
-    
+
     vertical-align: middle;
     text-align: center;
+}
+
+.fotos {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    height:100vh;
+    float: left;
+}
+
+.logotipo {
+    max-width: 20%;
+    display:inline;
 }
 
 .group:after {
@@ -58,5 +54,4 @@
 .vertical-align {
     padding-top: 25%;
     display: inline-block;
-    height:100vh;
 }

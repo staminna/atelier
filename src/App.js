@@ -1,25 +1,26 @@
 import React, {Component} from 'react';
 import Slider from "react-slick";
-import {
-  Route,
-  NavLink,
-  HashRouter
-} from "react-router-dom";
+import { HashRouter} from "react-router-dom";
 
 import './App.css';
+import './index.js'
 
 export default class Responsive extends Component {
   constructor() {
     super()
     this.state={
-     showMe:false
+     showMe:false,
+     hideMe: true
     }
   }
   operation()
   {
     this.setState({
       showMe:!this.state.showMe
-    })
+    });
+    this.setState({
+      hideMe:!this.state.hideMe
+    });
   }
   render() {
     var settings = {
@@ -82,12 +83,16 @@ export default class Responsive extends Component {
             </div>
           </Slider>
         </div>
-        <div className="right">
+        <div className="right" onClick={()=>this.operation()}>
           <HashRouter>
         <div className="vertical-align">
 
-             <img className="logotipo" src="parenteses.png" onClick={()=>this.operation()} alt="1"/> 
-
+            {
+              this.state.hideMe?
+                <img className="logotipo" src="parenteses.png" alt="1"/> 
+              :true
+            }
+            
              {
               this.state.showMe?
               <div className="morada">
