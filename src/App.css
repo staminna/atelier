@@ -47,9 +47,9 @@
 .vertical-align {
     padding-top: 40%;
     display: inline-table;
-
     table-layout: fixed;
     width: 100%;
+    height: 400px;
 }
 .horizontal-align{
     display: inline-block;
