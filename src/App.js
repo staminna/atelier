@@ -38,7 +38,7 @@ export default class Responsive extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: true,
-            dots: true
+            dots: false
           }
         },
         {
@@ -67,7 +67,7 @@ export default class Responsive extends Component {
               <img alt="detalhe loja" className="fotos" src="fotos/1_detalhe_loja.jpg"/>
             </div>
             <div>
-              <img alt="telhado" className="fotos" src="fotos/2_telhado_editado.jpg"/>
+              <img alt="telhado" className="fotos" src="fotos/2_telhado.jpg"/>
             </div>
             <div>
               <img alt="Santa luzia" className="fotos" src="fotos/3_santa_lusia.jpg"/>
@@ -92,20 +92,16 @@ export default class Responsive extends Component {
                 <img className="logotipo" src="parenteses.png" alt="1"/> 
               :true
             }
-            
-             {
+
+            {
               this.state.showMe?
-              <div className="morada">
-              <h2 className="logoFont"> MODO(s). </h2>
-              <p className="addressFont"> geral@modosatelier.pt </p>
-              <ul>
-                <li className="addressFont"> 917 662 686 | 914 258 208</li>
-                <li className="addressFont"> Rua Arístides de Sousa Mendes </li>
-                <li className="addressFont"> no27 fração A, 3100-510 Pombal</li>
-              </ul>
+              <div className="horizontal-align">
+                <p><img className="logo" src="fotos/modos_logo.jpg" alt="Modos - arquitectura, logotipo."/> </p>
+                <p><a className="addressFont" href="mailto:geral@modosatelier.pt"> geral@modosatelier.pt </a> </p>
+                <p><img className="morada" src="fotos/Morada.jpg" alt="Rua Aristides de Sousa Mendes, numero 27 fração A 3100-510 Pombal"/> </p>
               </div>
               :null
-             }
+            }
         </div>
       </HashRouter>
         </div>

@@ -5,17 +5,27 @@ body {
 .addressFace {
   font-family: Neutratext;
   src: url('fonts/NeutraText-BookAlt.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-  letter-spacing: 0.0625em;
 }
-
-.addressFont {
-  font-family: Neutratext;
-  letter-spacing: 2px;
-}
-
 li {
   list-style-type: none;
 }
-.logotipo {
-  display: none;
+
+a[href^="mailto:"]
+{
+  font-family: Neutratext;
+  color: black;
+  font-size: 21px;
+  letter-spacing: 0.0481em;
+}
+
+a:-webkit-any-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo {
+  text-align: center;
+  letter-spacing: 0.181em;
+  font-size: 42px;
+  display:inline;
 }

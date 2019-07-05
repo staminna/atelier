@@ -1,7 +1,6 @@
 .left {
     float: left;
     width: 50%;
-    /* background-color: black; */
 }
 .right {
     float: right;
@@ -11,6 +10,7 @@
 
     vertical-align: middle;
     text-align: center;
+    
 }
 
 .fotos {
@@ -44,14 +44,25 @@
     vertical-align: middle;
 }
 
-@font-face {
-    font-family: HelveticaModos;
-    src: url("./fonts/HelveticaNeueLTStd-Lt.otf") format("opentype");
-    text-align: center;
-    font-size: 180px;
+.vertical-align {
+    padding-top: 40%;
+    display: inline-table;
+
+    table-layout: fixed;
+    width: 100%;
+}
+.horizontal-align{
+    display: inline-block;
 }
 
-.vertical-align {
-    padding-top: 25%;
-    display: inline-block;
+.morada{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display:inline;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.slick-arrow .slick-next {
+    display: none;
 }
