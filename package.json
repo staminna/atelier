@@ -8,6 +8,7 @@
     "@typescript-eslint/typescript-estree": "^1.11.0",
     "browserslist": "^4.6.3",
     "eslint": "^5.16.0",
+    "path": "^0.12.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^4.2.2",

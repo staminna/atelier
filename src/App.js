@@ -3,14 +3,14 @@ import Slider from "react-slick";
 import { HashRouter} from "react-router-dom";
 
 import './App.css';
-import './index.js'
+// import './index.js'
 
-export default class Responsive extends Component {
+class App extends Component {
   constructor() {
     super()
     this.state={
-     showMe:false,
-     hideMe: true
+      showMe:false,
+      hideMe: true
     }
   }
   operation()
@@ -61,7 +61,6 @@ export default class Responsive extends Component {
     return (
       <div className="group">
         <div className="left">
-        {/* <h2> Modo(s). </h2> */}
           <Slider {...settings}>
             <div>
               <img alt="detalhe loja" className="fotos" src="fotos/1_detalhe_loja.jpg"/>
@@ -110,3 +109,4 @@ export default class Responsive extends Component {
   }
 }
 
+export default App;
