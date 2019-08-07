@@ -1,6 +1,7 @@
 .left {
     float: left;
     width: 50%;
+    overflow-x: hidden;
 }
 .right {
     float: right;
