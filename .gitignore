@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+Dockerfile
+Docker-compose.prod.yml
+docker-compose.compose.yml
+dockerignore

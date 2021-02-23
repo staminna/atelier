@@ -63,6 +63,12 @@ class App extends Component {
         <div className="left">
           <Slider {...settings}>
             <div>
+              <img alt="inicio obra arquitetura" className="fotos" src="fotos/a1_obra.jpg"/>
+            </div>
+            <div>
+              <img alt="inicio obra fundações" className="fotos" src="fotos/a2_fundacoes.jpg"/>
+            </div>
+            <div>
               <img alt="detalhe loja" className="fotos" src="fotos/1_detalhe_loja.jpg"/>
             </div>
             <div>
